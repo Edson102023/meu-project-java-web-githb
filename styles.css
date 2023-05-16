@@ -3,48 +3,60 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
 
 }
 
 body {
-    Background-color: #E5E5E5;
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+   
 
 }
 
 .container {
     width: 375px;
     background-color: #F4F4F4;
-    margin: 0 auto;
-    margin-top: 100px;
+    
+   
 
 
 }
 
 header {
-    background-color: #1B83E2;
+    background: #1B83E2;
     height: 66px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
 }
 
 h1 {
-
-
     Font-size: 24px;
     color: #F4F4F4;
+    line-height: 18px;
     text-align: center;
     padding-top: 25px;
 }
 
 main {
     padding: 24px;
+
 }
 
 label {
-    Font-style: normal;
-    Font-size: 14px;
-    Line-height: 18px;
-    Line-height: 110%;
+   
+    font-size: 14px;
+    line-height: 18px;
     color: #777777;
+    display: block;
+    margin-bottom: 6px;
 }
 
 select {
@@ -52,6 +64,8 @@ select {
     border: 1px, solid #BBBBBB;
     border-radius: 4px;
     height: 48px;
+    left: 24px;
+    top: 113px;
     cursor: pointer;
     display: block;
     outline: none;
@@ -61,35 +75,35 @@ select {
     box-shadow: 2px, 2px, 5px, rgba (0, 0, 0, 15);
     margin-top: 6px;
     margin-bottom: 24px;
+    
 }
 
 imput {
-    background: #FFFFFF;
-    border: 1px, solid #BBBBBB;
-    border-radius: 4px;
-    height: 40px;
     display: block;
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
     width: 100%;
-    outline: none;
+    height: 48px;
     padding-left: 16px;
-    box-shadow: 2px, 2px, 5px, rgba (0, 0, 0, 15);
-    font-size: 18px;
+    margin-bottom: 24px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    color: #555555;
 }
 
 button {
-    height: 48px;
-    background-color: #1B83E2;
+    background: #1B83E2;
+    font-size: 16px;
+    line-height: 18px;
     border-radius: 25px;
-    cursor: pointer;
     color: #F4F4F4;
-    Font-style: normal;
-    font-weight: bold;
-    Font-size: 16px;
-    Line-height: 18px;
-    border: none;
     width: 100%;
-    margin-top: 24px;
-    margin-bottom: 36px;
+    height: 48px;
+    border: none;
+   
 }
 
 button:hover {
@@ -100,33 +114,45 @@ button:hover {
 button:active {
     opacity: 0.7;
 }
-section {
-    border: 1px, solid #1B83E2;
-    border-radius: 4px;
-    
-}
-.currency-container {
-    text-align: center;
-    padding: 10px;
 
+section {
+    border: 1px solid #1B83E2;
+    border-radius: 4px;
+    margin-top: 36px;
+    margin-bottom: 32px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.section-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    padding: 10px;
 }
 
 .currency-name {
     font-size: 14px;
+    line-height: 18px;
     color: #777777;
-
 }
 
+
+
 .currency-value {
-    font-size: 20px;
+    font-style: normal;
     font-weight: bold;
+    font-size: 20px;
+    line-height: 18px;
     color: #1B83E2;
     
 }
 
-.vector-imag {
-    color: #DBDBDB;
-    margin: 15px, auto;
+.img-arrow{
+    margin: 15px auto;
     display: block;
    
 }

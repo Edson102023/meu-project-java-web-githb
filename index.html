@@ -24,40 +24,41 @@
 
         <main>
             <label>
-                converte <t>De</t>
+                Converter <strong>de</strong>
                 <select>
-                    <option>R$ - Real Brasileiro</option>
+                    <option>R$ Real Brasileiro</option>
                 </select>
 
             </label>
+            
             <label>
-                converte <t>Para</t>
-                <select>
-                    <option>U$$ - Dolar Americano</option>
-                    <option>€ - EURO União europeias</option>
+                Converter <strong>para</strong>
+                <select id="currency-select">
+                    <option>US$ Dolar americano</option>
+                    <option>€ EURO união europeia</option>
                 </select>
 
             </label>
             <lAbel>
                 Valor
-                <input placeholder="R$ 10.000.00">
+                <input id="input-real" placeholder="R$ 10.000,00" type="number">
             </lAbel>
 
-            <button type="Button">Converter</button>
+            <button id="convert-button" type="button">Converter</button>
             
             <section>
-                <div class="currency-container">
+                <div class="section-container">
                     <img src="./assets/Brasil.png" alt="bandeira brasileira">
-                    <p classe="currency-name">Real</p>
-                    <p classe="currency-value">R$ 10.000,00</p>
+                    <p class="currency-name">Real</p>
+                    <p class="currency-value" id="real-value-text">R$ 10.000,00</p>
                 </div>
 
-                    <img classe="vector-imag" src="./assets/Vector.png" alt="seta">
+                <img class="img-arrow" src="./assets/Vector.png" alt="seta">
 
-                <div classe="currency-container">
+                <div class="section-container">
                     <img src="./assets/Estados-unidos.png" alt="bandeira americana">
-                    <p classe="currency-name">Dolar Americano</p>
-                    <p classe="currency-value">US$ 2.000,00</p>
+                    <p class="currency-name" id="currency-name">Dólar Americano</p>
+                    <p class="currency-value" id="currency-value-text">US$ 2.000,00</p>
                 </div>
             </section>
 
